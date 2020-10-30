@@ -1,0 +1,71 @@
+table {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+table .st-key {
+  font-weight: bold;
+}
+.stacktable {
+	width: 100%;
+}
+.st-head-row {
+	padding-top: 1em;
+}
+.st-head-row.st-head-row-main {
+	font-size: 1.5em;
+	padding-top: 0;
+}
+.st-key {
+	padding-right: 1.5%;
+	text-align: right;
+	width: 45%;
+}
+.st-val {
+	padding-left: 1.5%;
+	text-align: left;
+	width: 54%;
+}
+.stacktable.large-only {
+	border: none;
+	box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.75);
+	display: table;
+	overflow: hidden;
+}
+.stacktable.large-only thead {
+	background-color: rgba(0, 102, 153, 0.9);
+}
+.stacktable.large-only thead tr th {
+	color: rgb(255, 255, 255);
+}
+.stacktable.large-only thead tr th,
+.stacktable.large-only tbody tr td {
+	font-family: 'Play', sans-serif;
+	font-size: 12px;
+	padding: 5px;
+	text-align: center;
+}
+.stacktable.small-only {
+	display: none;
+}
+@media (max-width: 800px) {
+	.stacktable.large-only {
+		display: none;
+	}
+	.stacktable.small-only {
+		display: table;
+		margin-bottom: 0;
+	}
+	.stacktable.small-only tbody tr td {
+		font-family: 'Play', sans-serif;
+		font-size: 12px;
+		padding: 6px;
+	}
+	.stacktable.small-only tbody tr:first-child {
+		background-color: rgba(0, 102, 153, 1);
+	}
+	.stacktable.small-only tbody tr:first-child td {
+		color: rgb(255, 255, 255);
+	}
+	.stacktable.small-only tbody tr:not(:first-child) td {
+		background-color: rgb(225, 225, 225);
+	}
+}
