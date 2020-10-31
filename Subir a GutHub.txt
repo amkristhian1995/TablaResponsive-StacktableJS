@@ -2,7 +2,7 @@
 $ git init
 
 # Especificar el repositorio
-$ git remote add origin https://github.com/amkristhian1995/tabla-responsive-con-stacktable-js.git
+$ git remote add origin https://github.com/amkristhian1995/TablaResponsive-StacktableJS.git
 
 $ git checkout -b gh-pages
 
